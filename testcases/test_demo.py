@@ -24,5 +24,4 @@ class TestDemo(softest.TestCase):
 
     def test_demo_b(self):
         actual = self.request.enter_data("dd", "ddd", "987")
-        self.soft_assert(self.assertEqual, "partnerName1", actual)
-        self.assert_all()
+        self.utils.assert_equals("partnerName1", actual)

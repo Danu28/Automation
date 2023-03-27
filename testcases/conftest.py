@@ -3,12 +3,15 @@ import os.path
 import pytest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-
+import shutil
+import os
 from configfiles.testdata import TestData
 
 
 @pytest.fixture(scope="class")
 def setup(request):
+    shutil.rmtree("reports/testcases")
+    os.mkdir("reports/testcases")
     global driver
     browser = TestData.BROWSER
     chrome_options = webdriver.ChromeOptions()

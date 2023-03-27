@@ -1,9 +1,10 @@
 import inspect
 import logging
 from openpyxl import workbook, load_workbook
+import softest as softest
 
 
-class Utils:
+class Utils(softest.TestCase):
 
     @staticmethod
     def get_logger():
@@ -42,3 +43,7 @@ class Utils:
             datalist.append(row)
 
         return datalist
+
+    def assert_equals(self, expected, actual):
+        self.soft_assert(self.assertEqual, expected, actual)
+        self.assert_all()

@@ -19,7 +19,6 @@ class BaseDriver:
 
     def wait_for_element(self, by_locator):
         element = self.wait.until(EC.presence_of_element_located(by_locator))
-        self.logger.info("Element")
         return element
 
     def wait_for_all_elements(self, by_locator):
