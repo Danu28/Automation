@@ -15,7 +15,7 @@ class Utils(softest.TestCase):
 
         # Console Handler
         ch = logging.StreamHandler()
-        fh = logging.FileHandler("C:\\Users\\Dhanush\\PycharmProjects\\Automation\\logs\\Automationlogs.log")
+        fh = logging.FileHandler("logs/Automationlogs.log")
 
         # format
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(name)s : %(message)s',
@@ -36,7 +36,7 @@ class Utils(softest.TestCase):
         row_ct = sh.max_row
         col_ct = sh.max_column
 
-        for r in range(1, row_ct + 1):
+        for r in range(2, row_ct + 1):
             row = []
             for c in range(1, col_ct + 1):
                 row.append(sh.cell(row=r, column=c).value)

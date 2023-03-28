@@ -104,6 +104,20 @@ class BasePage(BaseDriver):
         except:
             self.logger.error(str(by_locator) + " get_attribute_value failed ")
 
+    def is_displayed(self, by_locator):
+        try:
+            return self.wait_for_element(by_locator).is_displayed()
+        except:
+            self.logger.error(str(by_locator) + " is_displayed failed ")
+            return False
+
+    def is_enabled(self, by_locator):
+        try:
+            return self.wait_for_element(by_locator).is_enabled()
+        except:
+            self.logger.error(str(by_locator) + " is_enabled failed ")
+            return False
+
     def close_window(self):
         try:
             self.driver.close()

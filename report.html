@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Automation Test Report</h1>
-    <p>Report generated on 28-Mar-2023 at 09:18:41 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 27-Mar-2023 at 21:26:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -455,8 +455,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.7</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 24.41 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 0.55 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -466,24 +466,4 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="duration">Duration</th>
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">testcases/test_loginpage.py::TestLoginPage::test_validate_user_2___admin1____password__</td>
-          <td class="col-duration">16.85</td>
-          <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="testcases/test_loginpage.py_TestLoginPage_test_validate_user_2___admin1____password__.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;testcases.test_loginpage.TestLoginPage testMethod=test_validate_user_2___admin1____password__&gt;, username = &#x27;admin1&#x27;, password = &#x27;password&#x27;<br/><br/>    @data(*Utils.read_data_from_excel(&quot;testdata/testdata.xlsx&quot;, &quot;login_page&quot;))<br/>    @unpack<br/>    def test_validate_user(self, username, password):<br/>        actual = self.login_page.validate_user(username, password)<br/>        self.soft_assert(self.assertEqual, True, actual)<br/>&gt;       self.assert_all()<br/><br/>testcases\test_loginpage.py:22: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\softest\case.py:139: in assert_all<br/>    self.fail(&#x27;&#x27;.join(failure_output))<br/><span class="error">E   AssertionError: ++++ soft assert failure details follow below ++++</span><br/><span class="error">E   </span><br/><span class="error">E   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><br/><span class="error">E   The following failure was found in &quot;wrapper&quot; (testcases.test_loginpage.TestLoginPage):</span><br/><span class="error">E   +----------------------+----------------------+----------------------+</span><br/><span class="error">E   Traceback (most recent call last):</span><br/><span class="error">E     File &quot;C:\Users\Dhanush\PycharmProjects\Automation\testcases\test_loginpage.py&quot;, line 21, in test_validate_user</span><br/><span class="error">E       self.soft_assert(self.assertEqual, True, actual)</span><br/><span class="error">E     File &quot;C:\Users\Dhanush\AppData\Local\Programs\Python\Python310\lib\site-packages\ddt.py&quot;, line 220, in wrapper</span><br/><span class="error">E       return func(self, *args, **kwargs)</span><br/><span class="error">E     File &quot;C:\Users\Dhanush\AppData\Local\Programs\Python\Python310\lib\site-packages\softest\case.py&quot;, line 62, in soft_assert</span><br/><span class="error">E       assert_method(*arguments, **keywords)</span><br/><span class="error">E     File &quot;C:\Users\Dhanush\AppData\Local\Programs\Python\Python310\lib\unittest\case.py&quot;, line 845, in assertEqual</span><br/><span class="error">E       assertion_func(first, second, msg=msg)</span><br/><span class="error">E     File &quot;C:\Users\Dhanush\AppData\Local\Programs\Python\Python310\lib\unittest\case.py&quot;, line 838, in _baseAssertEqual</span><br/><span class="error">E       raise self.failureException(msg)</span><br/><span class="error">E   AssertionError: True != False</span><br/><span class="error">E   </span><br/><span class="error">E   -+ [1/1] +-</span><br/> ------------------------------Captured stderr call------------------------------ <br/>03/28/2023 09:18:41 AM - ERROR - BasePage : (&#x27;xpath&#x27;, &quot;//a[@href=&#x27;../Signout.aspx&#x27;]&quot;) is_displayed failed 
-<br/> -------------------------------Captured log call-------------------------------- <br/>ERROR    BasePage:basepage.py:111 (&#x27;xpath&#x27;, &quot;//a[@href=&#x27;../Signout.aspx&#x27;]&quot;) is_displayed failed<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/test_loginpage.py::TestLoginPage::test_validate_user_1___admin____Discovery889977__</td>
-          <td class="col-duration">6.85</td>
-          <td class="col-links"><a class="url" href="http://www.example.com/" target="_blank">URL</a> </td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
